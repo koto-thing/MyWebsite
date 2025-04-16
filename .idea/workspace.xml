@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/src/components/UnityViewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-website/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +65,7 @@
       <workItem from="1744817046087" duration="1917000" />
       <workItem from="1744822802223" duration="58000" />
       <workItem from="1744822872413" duration="150000" />
+      <workItem from="1744823233746" duration="445000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,7 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  "homrpage": "https:/koto-thing.github.io/my-website/",
+  "homrpage": "https://koto-thing.github.io/my-website/",
   "Scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
