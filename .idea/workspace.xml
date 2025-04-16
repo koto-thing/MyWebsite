@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-website/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-website/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-website/src/components/UnityViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/src/components/UnityViewer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <workItem from="1744817046087" duration="1917000" />
       <workItem from="1744822802223" duration="58000" />
       <workItem from="1744822872413" duration="150000" />
-      <workItem from="1744823233746" duration="2763000" />
+      <workItem from="1744823233746" duration="3486000" />
     </task>
     <servers />
   </component>
