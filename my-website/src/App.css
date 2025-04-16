@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #4a90e2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  font-family: "Arial", sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

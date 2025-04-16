@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>ポートフォリオサイト</h1>
+      <h1 className = "title">ポートフォリオ</h1>
       <UnityViewer />
     </div>
   );
