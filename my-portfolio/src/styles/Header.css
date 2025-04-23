@@ -1,0 +1,28 @@
+﻿.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.Header_Left {
+    fonst-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Header_Right {
+    display: flex;
+    gap: 16px;
+}
+
+.Header_Right a {
+    color: #121212;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Header_Right a:hover {
+    color: #4a90e2;
+}

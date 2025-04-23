@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import UnityViwer from './components/UnityViewer';
 import TrackList from './components/TrackList';
+import Header from './components/Header';
 import './App.css';
 
 const App: React.FC = () => {
@@ -15,12 +16,16 @@ const App: React.FC = () => {
             <button className="toggle-button" onClick={toggleMode}>
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
             </button>
-            
-            <h1 className="title">ことのポートフォリオ</h1>
-            <UnityViwer buildPath="DroneGame" />
-            
-            <header className="text-3x1 font-bold mb-6">My Music Collection</header>
-            <TrackList />
+
+            <Header />
+
+                <main>
+                    <h1 className="title">ことのポートフォリオ</h1>
+                    <UnityViwer buildPath="DroneGame" />
+
+                    <header className="text-3x1 font-bold mb-6">My Music Collection</header>
+                    <TrackList />
+                </main>
         </div>
     );
 };

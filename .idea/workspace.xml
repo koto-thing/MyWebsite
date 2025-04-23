@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-website/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-website/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/unity/DroneGame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/public/unity/DroneGame/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/UnityViewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/UnityViewer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -35,25 +43,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/就活/MyPortofolio",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\就活\\MyPortofolio\\my-portfolio\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-portfolio/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -70,6 +99,8 @@
       <workItem from="1744822802223" duration="58000" />
       <workItem from="1744822872413" duration="150000" />
       <workItem from="1744823233746" duration="4072000" />
+      <workItem from="1745388905913" duration="1096000" />
+      <workItem from="1745390048158" duration="5159000" />
     </task>
     <servers />
   </component>
