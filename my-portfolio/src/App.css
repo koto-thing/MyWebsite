@@ -29,10 +29,18 @@ body {
 .title {
   text-align: center;
   font-size: 3rem;
-  color: #4a90e2;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.MusicTrack {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  margin-top: 20px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .toggle-button {

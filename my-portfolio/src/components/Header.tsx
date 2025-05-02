@@ -13,16 +13,16 @@ const Header: React.FC = () => {
             <nav>
                 <ul className="Header_Right">
                     <li>
-                        <a href="#home" className="hover:underline">Home</a>
+                        <a href="#home" className="hover:underline">HOME</a>
                     </li>
                     <li>
-                        <a href="#about" className="hover:underline">About</a>
+                        <a href="#about" className="hover:underline">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#projects" className="hover:underline">Projects</a>
+                        <a href="#projects" className="hover:underline">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="#contact" className="hover:underline">Contact</a>
+                        <a href="#contact" className="hover:underline">CONTACT</a>
                     </li>
                 </ul>
             </nav>
