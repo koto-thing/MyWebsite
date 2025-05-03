@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/Background.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/Dither.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/HomeSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/InfoSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/MusicSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/ProjectsSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/about/AboutSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/about/TextField.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/contact/ContactSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/Background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/Dither.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/HomeSection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/about/AboutSection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/about/TextField.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/contact/ContactSection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/Header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
       </list>
@@ -41,26 +58,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/就活/MyPortofolio&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\就活\\MyPortofolio\\my-portfolio\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/就活/MyPortofolio",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.deploy.executor": "Run",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\就活\\MyPortofolio\\my-portfolio\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\contact" />
+      <recent name="D:\就活\MyPortofolio\my-portfolio\src\styles\section\about" />
+      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\About" />
+      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-portfolio/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/my-portfolio/package.json" />
       <command value="run" />
@@ -73,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -100,6 +137,7 @@
       <workItem from="1745388905913" duration="1096000" />
       <workItem from="1745390048158" duration="5159000" />
       <workItem from="1746176905051" duration="3717000" />
+      <workItem from="1746288166047" duration="12540000" />
     </task>
     <servers />
   </component>

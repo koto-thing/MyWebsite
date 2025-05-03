@@ -1,0 +1,23 @@
+﻿.HomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.String {
+    font-family: "novecento-sans", sans-serif;
+    text-align: left;
+    margin-top: 250px;
+}
+
+.String h1 {
+    font-size: 50px;
+    margin-bottom: 0; /* 下の余白を削除 */
+}
+
+.String h2 {
+    font-size: 75px;
+    margin-top: 0; /* 上の余白を削除 */
+}

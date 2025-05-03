@@ -10,23 +10,37 @@
 
 .Header_Left {
     text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.Header_Right {
-    display: flex;
-    list-style: none;
-    gap: 80px;
-    margin-right: 30px;
-}
-
-.Header_Right a {
+.Header_Left a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.Header_Right a:hover {
+.Header_Left a:hover {
+    cursor: pointer;
+}
+
+.Header_Right {
+    font-family: "novecento-sans", sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    margin-right: 50px;
+}
+
+.Header_Right span {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Header_Right span:hover {
     color: gray;
+    cursor: pointer;
 }

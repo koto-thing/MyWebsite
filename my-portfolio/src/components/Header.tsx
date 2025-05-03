@@ -1,28 +1,35 @@
 ﻿import React from "react";
 import "../styles/Header.css";
 
-const Header: React.FC = () => {
+type Props = {
+    onNavClick: (page: string) => void;
+};
+
+const Header: React.FC<Props> = ({ onNavClick}) => {
     return (
         <header className="Header">
             {/* Logo or Title */}
             <div className="Header_Left">
-                My Portfolio
+                <a onClick={() => onNavClick("home")}>ことのポートフォリオ</a>
             </div>
 
             {/* ページの移動先 */}
             <nav>
                 <ul className="Header_Right">
                     <li>
-                        <a href="#home" className="hover:underline">HOME</a>
+                        <span onClick={() => onNavClick("about")}>ABOUT</span>
                     </li>
                     <li>
-                        <a href="#about" className="hover:underline">ABOUT</a>
+                        <span onClick={() => onNavClick("music")}>MUSIC</span>
                     </li>
                     <li>
-                        <a href="#projects" className="hover:underline">PROJECTS</a>
+                        <span onClick={() => onNavClick("projects")}>PROJECTS</span>
                     </li>
                     <li>
-                        <a href="#contact" className="hover:underline">CONTACT</a>
+                        <span onClick={() => onNavClick("info")}>INFO</span>
+                    </li>
+                    <li>
+                        <span onClick={() => onNavClick("contact")}>CONTACT</span>
                     </li>
                 </ul>
             </nav>

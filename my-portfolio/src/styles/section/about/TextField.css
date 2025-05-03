@@ -1,0 +1,30 @@
+﻿.TextField {
+    display: flex;
+    flex-direction: row; /* 横並びに配置 */
+    justify-content: space-evenly; /* 均等に配置 */
+    align-items: flex-start; /* 上揃え */
+    margin-top: 75px; /* 上の余白 */
+}
+
+.Section {
+    display: flex;
+    flex-direction: column; /* 各セクション内は縦並び */
+    align-items: flex-start; /* 左揃え */
+    padding: 1rem;
+    border: 1px solid #ccc; /* 見やすくするための枠線 */
+    box-sizing: border-box;
+}
+
+.Skills {
+    display: flex;
+    flex-direction: row; /* 横並びに配置 */
+    gap: 1rem; /* セクション間の間隔 */
+}
+
+.Languages, .Tools {
+    display: flex;
+    flex-direction: column; /* 各セクション内は縦並び */
+    align-items: flex-start; /* 左揃え */
+    padding: 1rem;
+    box-sizing: border-box;
+}
