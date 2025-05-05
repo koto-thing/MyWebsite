@@ -17,6 +17,7 @@
 
 .Header_Left a {
     color: white;
+    margin-left: 30px;
     text-decoration: none;
     transition: color 0.3s ease;
 }

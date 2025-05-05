@@ -7,17 +7,20 @@
 }
 
 .String {
+    cursor: default;
     font-family: "novecento-sans", sans-serif;
     text-align: left;
     margin-top: 250px;
 }
 
 .String h1 {
-    font-size: 50px;
-    margin-bottom: 0; /* 下の余白を削除 */
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin-bottom: -30px; /* 下の余白を削除 */
 }
 
 .String h2 {
+    letter-spacing: 5px;
     font-size: 75px;
     margin-top: 0; /* 上の余白を削除 */
 }

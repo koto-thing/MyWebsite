@@ -1,0 +1,19 @@
+﻿.Album-Card {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Album-Card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.Album-Card img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}

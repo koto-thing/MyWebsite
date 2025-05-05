@@ -1,0 +1,32 @@
+﻿.Search-Bar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 20px;
+    padding: 6px 12px;
+    width: 500px;
+    height: 30px;
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1);
+    font-family: "novecento-sans", sans-serif;
+    margin-top: 20px;
+}
+
+.Input-Field{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    padding-left: 6px;
+    caret-color: white;
+}
+
+.Input-Field::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.Search-Bar svg {
+    width: 20px;
+    height: 20px;
+}

@@ -12,7 +12,7 @@ const ContactSection: React.FC = () => {
                         href="mailto:gotoukenta62@gmail.com"
                         className="contact-button"
                     >
-                        📧 メールを送る
+                        📧 Email
                     </a>
 
                     <a
@@ -21,7 +21,7 @@ const ContactSection: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        🐙 GitHub プロフィールを見る
+                        🐙 GitHub
                     </a>
                 </div>
             </div>

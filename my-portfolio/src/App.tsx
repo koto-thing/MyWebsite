@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import AboutSection from "./components/section/about/AboutSection.tsx";
 import Header from './components/Header';
 import './App.css';
-import HomeSection from "./components/section/HomeSection.tsx";
-import MusicSection from "./components/section/MusicSection.tsx";
+import HomeSection from "./components/section/home/HomeSection.tsx";
+import MusicSection from "./components/section/music/MusicSection.tsx";
 import InfoSection from "./components/section/InfoSection.tsx";
 import ProjectsSection from "./components/section/ProjectsSection.tsx";
 import ContactSection from "./components/section/contact/ContactSection.tsx";
+import {BackgroundScene} from "./components/BackgroundScene.tsx";
 
 const App: React.FC = () => {
     const [activePage, setActivePage] = useState("home");
@@ -43,8 +44,23 @@ const App: React.FC = () => {
         }
     };
 
+    const backgroundImageForPage: { [key: string]: string } = {
+        home: "/img/LightHouse.jpg",
+        about: "/img/LightHouse.jpg",
+        music: "/img/LightHouse.jpg",
+        projects: "/img/LightHouse.jpg",
+        info: "/img/LightHouse.jpg",
+        contact: "/img/LightHouse.jpg",
+    };
+
+    const currentBackground = backgroundImageForPage[activePage] ?? "/img/LightHouse.jpg";
+
     return (
         <div>
+            <div style={{ position: "fixed", width: "100vw", height: "100vh", zIndex: -1}}>
+                <BackgroundScene imageUrl={currentBackground} />
+            </div>
+
             <Header onNavClick={handleNavClick} />
             <main className={`content ${fadeState}`}>
                 {renderSection()}

@@ -1,0 +1,50 @@
+﻿.Album-Gallery {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Album-Details {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px 0;
+}
+
+.Album-Detail-Cover {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.Album-Detail-Info {
+    flex: 1;
+}
+
+.Play-Button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.Close-Button {
+    margin-left: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.Blurred-Background {
+    pointer-events: none;
+    user-select: none;
+}
