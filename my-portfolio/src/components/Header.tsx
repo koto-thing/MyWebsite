@@ -5,7 +5,7 @@ type Props = {
     onNavClick: (page: string) => void;
 };
 
-const Header: React.FC<Props> = ({ onNavClick}) => {
+const Header: React.FC<Props> = ({ onNavClick }) => {
     return (
         <header className="Header">
             {/* Logo or Title */}

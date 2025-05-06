@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import AboutSection from "./components/section/about/AboutSection.tsx";
 import Header from './components/Header';
-import './App.css';
 import HomeSection from "./components/section/home/HomeSection.tsx";
 import MusicSection from "./components/section/music/MusicSection.tsx";
 import InfoSection from "./components/section/InfoSection.tsx";
 import ProjectsSection from "./components/section/ProjectsSection.tsx";
 import ContactSection from "./components/section/contact/ContactSection.tsx";
 import {BackgroundScene} from "./components/BackgroundScene.tsx";
+
+import './App.css';
 
 const App: React.FC = () => {
     const [activePage, setActivePage] = useState("home");
