@@ -1,19 +1,63 @@
-﻿.Album-Card {
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.Album-Card img {
+﻿.album-card-figure {
+    position: relative;
     width: 100%;
     height: 100%;
-    display: block;
+    perspective: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.Album-Card img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
+.album-card-mobile-alert {
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .album-card-mobile-alert {
+        display: block;
+    }
+    .album-card-caption {
+        display: none;
+    }
+}
+
+.album-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.album-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.album-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    will-change: transform;
+    transform: translateZ(30px);
+}
+
+.album-card-caption {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 4px 10px;
+    font-size: 10px;
+    color: #2d2d2d;
+    opacity: 0;
+    z-index: 3;
 }

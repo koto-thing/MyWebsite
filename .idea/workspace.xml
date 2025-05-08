@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/FaviconGetter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/Album.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AnimatedAlbumOverlay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/Track.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/TrackList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AnimatedAlbumOverlay.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/TrackList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/about/TextField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/about/TextField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/contact/ContactSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/contact/ContactSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AlbumCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AlbumCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AlbumGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AlbumGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/SearchBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/SearchBar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +34,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -67,11 +80,11 @@
       <recent name="D:\就活\MyPortofolio\my-portfolio\public\albums" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\music" />
       <recent name="D:\就活\MyPortofolio\my-portfolio\public\img" />
       <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\home" />
       <recent name="D:\就活\MyPortofolio\my-portfolio\src\styles\section\home" />
       <recent name="D:\就活\MyPortofolio\my-portfolio\src\components" />
-      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\music" />
     </key>
   </component>
   <component name="RunManager" selected="npm.deploy">
@@ -135,7 +148,7 @@
       <workItem from="1746550555499" duration="2457000" />
       <workItem from="1746553790456" duration="39000" />
       <workItem from="1746603185902" duration="5006000" />
-      <workItem from="1746680135822" duration="3733000" />
+      <workItem from="1746680135822" duration="17199000" />
     </task>
     <servers />
   </component>

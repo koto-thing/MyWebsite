@@ -2,12 +2,15 @@
 import SearchBar from "./SearchBar.tsx";
 import AlbumGrid from "./AlbumGrid.tsx";
 import albumsData from "./albumsData.ts";
+import {Album} from "./Album.ts";
 import "../../../styles/section/music/AlbumGallery.css";
 
 const AlbumGallery = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(0);
-    const [selectedAlbum, setSelectedAlbum] = useState(null);
+    const [direction, setDirection] = useState<"left" | "right">("right");
+    const [selectedAlbum, setSelectedAlbum] = useState<Album | null>(null);
+    const [originRect, setOriginRect] = useState<DOMRect | null>(null);
 
     const filteredAlbums = albumsData.filter((album) =>
         album.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -26,6 +29,13 @@ const AlbumGallery = () => {
         setSelectedAlbum(null);
     };
 
+    const handlePageChange = (page: number) => {
+        if(page === currentPage) return
+        const clampedPage = Math.max(0, Math.min(page, totalPages - 1));
+        setDirection(page > currentPage ? "right" : "left");
+        setCurrentPage(clampedPage);
+    };
+
     return (
         <div className={`Album-Gallery ${selectedAlbum ? "Blurred-Background" : ""}`}>
             <SearchBar value={searchTerm} onSearch={handleSearch} />
@@ -35,8 +45,12 @@ const AlbumGallery = () => {
                     albums={currentAlbums}
                     currentPage={currentPage}
                     totalPages={totalPages}
-                    onNext={() => setCurrentPage((p) => Math.min(p + 1, totalPages - 1))}
-                    onPrev={() => setCurrentPage((p) => Math.max(p - 1, 0))}
+                    onNext={() => handlePageChange(currentPage + 1)}
+                    onPrev={() => handlePageChange(currentPage - 1)}
+                    onPageChange={handlePageChange}
+                    direction={direction}
+                    setSelectedAlbum={setSelectedAlbum}
+                    setOriginRect={setOriginRect}
                 />
             )}
         </div>

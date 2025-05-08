@@ -22,10 +22,10 @@ const TextField: React.FC = () => {
                             <div className="Skills">
                                     <div className="Languages">
                                             <h3>Languages</h3>
-                                            <p>C: 3 years</p>
-                                            <p>C++: 3 years</p>
+                                            <p>C: 2 years</p>
+                                            <p>C++: 2 years</p>
                                             <p>JAVA: 2 years</p>
-                                            <p>C#: 2 years and half</p>
+                                            <p>C#: 1 years and half</p>
                                             <p>HTML: 1 years</p>
                                             <p>JavaScript: 1 years</p>
                                     </div>

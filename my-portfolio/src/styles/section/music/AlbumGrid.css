@@ -1,19 +1,89 @@
 ﻿.Album-Grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(5, 325px);
     grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
-.Album-Card {
+.Album-Grid-Container.blurred {
+    filter: blur(4px);
+    transition: filter 0.3s;
+}
+
+.Album-Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.Album-Overlay-Content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     text-align: center;
+    width: 300px;
 }
 
-.Album-Card img {
-    width: 200px;
-    height: 200px;
-    border-radius: 6px;
+.Slide-left {
+    animation: slide-left 0.5s ease-in-out;
+}
+
+.Slide-right {
+    animation: slide-right 0.5s ease-in-out;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(1%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-2%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.Page-Dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dot {
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.Dot:hover {
+    background-color: #888;
+}
+
+.Dot.Active {
+    background-color: #fff;
 }
 
 .Page-Nation {

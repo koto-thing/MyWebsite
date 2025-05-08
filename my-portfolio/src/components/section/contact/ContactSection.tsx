@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import { getFavicon } from "../../FaviconGetter";
 import "../../../styles/section/contact/ContactSection.css";
 
 const ContactSection: React.FC = () => {
@@ -12,7 +13,8 @@ const ContactSection: React.FC = () => {
                         href="mailto:gotoukenta62@gmail.com"
                         className="contact-button"
                     >
-                        📧 Email
+                        <img src={getFavicon("https://google.com")} alt="Gmail Favicon" style={{width: "16px", marginRight: "8px"}} />
+                        Email
                     </a>
 
                     <a
@@ -21,7 +23,8 @@ const ContactSection: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        🐙 GitHub
+                        <img src={getFavicon("https://github.com")} alt="GitHub Favicon" style={{ width: "16px", marginRight: "8px"}} />
+                        GitHub
                     </a>
                 </div>
             </div>
