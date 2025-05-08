@@ -46,15 +46,15 @@ const App: React.FC = () => {
     };
 
     const backgroundImageForPage: { [key: string]: string } = {
-        home: "/img/LightHouse.jpg",
-        about: "/img/LightHouse.jpg",
-        music: "/img/LightHouse.jpg",
-        projects: "/img/LightHouse.jpg",
-        info: "/img/LightHouse.jpg",
-        contact: "/img/LightHouse.jpg",
+        home: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
+        about: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
+        music: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
+        projects: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
+        info: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
+        contact: `${import.meta.env.BASE_URL}img/LightHouse.jpg`,
     };
 
-    const currentBackground = backgroundImageForPage[activePage] ?? "/img/LightHouse.jpg";
+    const currentBackground = backgroundImageForPage[activePage] ?? `${import.meta.env.BASE_URL}img/LightHouse.jpg`;
 
     return (
         <div>
