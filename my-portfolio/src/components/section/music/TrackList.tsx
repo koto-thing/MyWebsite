@@ -1,7 +1,7 @@
 ﻿import { useEffect, useState } from 'react';
 import {Track} from './Track.ts';
 
-const TrackList = ({ albumId }: { albumId: number }) => {
+export const TrackList = ({ albumId }: { albumId: number }) => {
     const [tracks, setTracks] = useState<Track[]>([]);
 
     useEffect(() => {

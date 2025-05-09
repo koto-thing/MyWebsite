@@ -1,4 +1,6 @@
 ﻿import AlbumCard from "./AlbumCard";
+import { AnimatedAlbumOverlay } from "./AnimatedAlbumOverlay";
+import { Track } from "./Track";
 import "../../../styles/section/music/AlbumGrid.css";
 
 type Album = {
@@ -6,6 +8,9 @@ type Album = {
     title: string;
     image: string;
     coverUrl: string;
+    artist: string;
+    thumbnailUrl: string;
+    tracks: Track[];
 };
 
 type AlbumGridProps = {
@@ -18,14 +23,33 @@ type AlbumGridProps = {
     direction: "left" | "right";
     setSelectedAlbum: (album: Album | null) => void;
     setOriginRect: (rect: DOMRect | null) => void;
+    selectedAlbum: Album | null;
+    originRect: DOMRect | null;
 }
 
-const handleAlbumClick = (album: Album, rect: DOMRect, setSelectedAlbum: (album: Album | null) => void) => {
+const handleAlbumClick = (
+    album: Album,
+    rect: DOMRect,
+    setSelectedAlbum: (album: Album | null) => void,
+    setOriginRect: (rect: DOMRect | null) => void
+) => {
     setSelectedAlbum(album);
     setOriginRect(rect);
-}
+};
 
-const AlbumGrid = ({ albums, currentPage, totalPages, onNext, onPrev, onPageChange, direction }: AlbumGridProps) => {
+const AlbumGrid = ({
+                       albums,
+                       currentPage,
+                       totalPages,
+                       onNext,
+                       onPrev,
+                       onPageChange,
+                       direction,
+                       setSelectedAlbum,
+                       setOriginRect,
+                       selectedAlbum,
+                       originRect
+                   }: AlbumGridProps) => {
     return (
         <div className={`Album-Grid-Container ${selectedAlbum ? "blurred" : ""}`}>
             <div className={`Album-Grid Slide-${direction}`} key={currentPage}>
@@ -37,7 +61,7 @@ const AlbumGrid = ({ albums, currentPage, totalPages, onNext, onPrev, onPageChan
                         caption={album.title}
                         imageHeight="200px"
                         imageWidth="200px"
-                        onClick={(rect) => handleAlbumClick(album, rect, setSlectedAlbum, setOriginRect)}
+                        onClick={(rect) => handleAlbumClick(album, rect, setSelectedAlbum, setOriginRect)}
                     />
                 ))}
             </div>
@@ -49,17 +73,6 @@ const AlbumGrid = ({ albums, currentPage, totalPages, onNext, onPrev, onPageChan
                     onClose={() => setSelectedAlbum(null)}
                 />
             )}
-
-            (selectedAlbum && ({
-                <div className="Album-Overlay">
-                    <div className="Album-Overlay-Content">
-                        <img src={selectedAlbum.coverUrl} alt={selectedAlbum.title} />
-                        <h2>{selectedAlbum.title}</h2>
-                        <TrackList albumId={selectedAlbum.id} />
-                        <button onClick={() => setSelectedAlbum(null)}>閉じる</button>
-                    </div>
-                </div>
-            }))
 
             <div className="Page-Nation">
                 <button onClick={onPrev} disabled={currentPage === 0}>

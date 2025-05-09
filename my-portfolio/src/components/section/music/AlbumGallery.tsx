@@ -1,8 +1,8 @@
 ﻿import { useState } from "react";
 import SearchBar from "./SearchBar.tsx";
 import AlbumGrid from "./AlbumGrid.tsx";
+import { Album } from "./Album.ts";
 import albumsData from "./albumsData.ts";
-import {Album} from "./Album.ts";
 import "../../../styles/section/music/AlbumGallery.css";
 
 const AlbumGallery = () => {
@@ -40,19 +40,19 @@ const AlbumGallery = () => {
         <div className={`Album-Gallery ${selectedAlbum ? "Blurred-Background" : ""}`}>
             <SearchBar value={searchTerm} onSearch={handleSearch} />
 
-            {!selectedAlbum && (
-                <AlbumGrid
-                    albums={currentAlbums}
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onNext={() => handlePageChange(currentPage + 1)}
-                    onPrev={() => handlePageChange(currentPage - 1)}
-                    onPageChange={handlePageChange}
-                    direction={direction}
-                    setSelectedAlbum={setSelectedAlbum}
-                    setOriginRect={setOriginRect}
-                />
-            )}
+            <AlbumGrid
+                albums={currentAlbums}
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onNext={() => handlePageChange(currentPage + 1)}
+                onPrev={() => handlePageChange(currentPage - 1)}
+                onPageChange={handlePageChange}
+                direction={direction}
+                setSelectedAlbum={setSelectedAlbum}
+                setOriginRect={setOriginRect}
+                selectedAlbum={selectedAlbum}
+                originRect={originRect}
+            />
         </div>
     );
 };
