@@ -4,6 +4,7 @@ import AlbumGrid from "./AlbumGrid.tsx";
 import { Album } from "./Album.ts";
 import albumsData from "./albumsData.ts";
 import "../../../styles/section/music/AlbumGallery.css";
+import {AnimatedAlbumOverlay} from "./AnimatedAlbumOverlay.tsx";
 
 const AlbumGallery = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -53,6 +54,15 @@ const AlbumGallery = () => {
                 selectedAlbum={selectedAlbum}
                 originRect={originRect}
             />
+
+            {selectedAlbum && originRect && (
+                <AnimatedAlbumOverlay
+                    album={selectedAlbum}
+                    originRect={originRect}
+                    onClose={() => setSelectedAlbum(null)}
+                    onPlay={() => {}}
+                />
+            )}
         </div>
     );
 };

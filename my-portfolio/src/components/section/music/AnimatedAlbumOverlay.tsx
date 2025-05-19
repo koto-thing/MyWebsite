@@ -1,15 +1,18 @@
 ﻿import { useEffect, useRef, useState } from "react";
 import { TrackList } from "./TrackList.tsx";
 import { Album } from "./Album.ts";
+import "../../../styles/section/music/AnimatedAlbumOverlay.css";
 
 export const AnimatedAlbumOverlay = ({
     album,
     originRect,
     onClose,
+    onPlay,
 }: {
     album: Album;
     originRect: DOMRect;
     onClose: () => void;
+    onPlay: () => void;
 }) => {
     const overlayRef = useRef<HTMLDivElement>(null);
     const [animating, setAnimating] = useState(true);
@@ -19,7 +22,7 @@ export const AnimatedAlbumOverlay = ({
         if(!overlay) return;
 
         const finalX = 350;
-        const finalY = 150;
+        const finalY = 300;
 
         overlay.style.position = "fixed";
         overlay.style.left = `${originRect.left}px`;
@@ -50,8 +53,11 @@ export const AnimatedAlbumOverlay = ({
             {!animating && (
                 <div className="Album-Overlay-Content">
                     <h2>{album.title}</h2>
+                    <h3>{album.artist}</h3>
+                    <p>{album.description}</p>
                     <TrackList albumId={album.id} />
-                    <button onClick={onClose}>閉じる</button>
+                    <button onClick={onPlay}>PLAY</button>
+                    <button onClick={onClose}>CLOSE</button>
                 </div>
             )}
         </div>

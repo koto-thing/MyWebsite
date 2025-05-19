@@ -9,21 +9,42 @@
 .Album-Overlay-Animated-Card {
     position: absolute;
     z-index: 1000;
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .Album-Overlay-Content {
+    background: none;
+    box-shadow: black 0px 0px 20px;
+    text-align: left;
     position: fixed;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     z-index: 1001;
-    text-align: center;
     animation: fadeIn 0.3s ease-in;
+    margin-left: 500px;
+    margin-top: 150px;
+}
+
+.Album-Overlay-Content h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    color: black;
+}
+
+.Album-Overlay-Content button {
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 20px;
+    padding: 6px 12px;
+    width: 100px;
+    height: 30px;
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1);
+    font-family: "novecento-sans", sans-serif;
+    color: white;
+    border: none;
+}
+
+.Album-Overlay-Content button:hover {
+    cursor: pointer;
+    background: gray;
 }
 
 @keyframes fadeIn {

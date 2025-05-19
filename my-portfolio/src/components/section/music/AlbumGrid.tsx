@@ -1,8 +1,8 @@
 ﻿import AlbumCard from "./AlbumCard";
-import { AnimatedAlbumOverlay } from "./AnimatedAlbumOverlay";
 import { Track } from "./Track";
 import "../../../styles/section/music/AlbumGrid.css";
 
+// アルバムのデータ型
 type Album = {
     id: number;
     title: string;
@@ -13,6 +13,7 @@ type Album = {
     tracks: Track[];
 };
 
+// アルバムグリッドのプロパティ型
 type AlbumGridProps = {
     albums: Album[];
     currentPage: number;
@@ -27,6 +28,7 @@ type AlbumGridProps = {
     originRect: DOMRect | null;
 }
 
+// アルバムクリック時の処理
 const handleAlbumClick = (
     album: Album,
     rect: DOMRect,
@@ -37,6 +39,7 @@ const handleAlbumClick = (
     setOriginRect(rect);
 };
 
+// アルバムグリッドのコンポーネント
 const AlbumGrid = ({
                        albums,
                        currentPage,
@@ -48,7 +51,6 @@ const AlbumGrid = ({
                        setSelectedAlbum,
                        setOriginRect,
                        selectedAlbum,
-                       originRect
                    }: AlbumGridProps) => {
     return (
         <div className={`Album-Grid-Container ${selectedAlbum ? "blurred" : ""}`}>
@@ -65,14 +67,6 @@ const AlbumGrid = ({
                     />
                 ))}
             </div>
-
-            {selectedAlbum && originRect && (
-                <AnimatedAlbumOverlay
-                    album={selectedAlbum}
-                    originRect={originRect}
-                    onClose={() => setSelectedAlbum(null)}
-                />
-            )}
 
             <div className="Page-Nation">
                 <button onClick={onPrev} disabled={currentPage === 0}>
