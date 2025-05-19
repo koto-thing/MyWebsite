@@ -1,7 +1,6 @@
 ﻿.Album-Overlay {
     position: fixed;
     inset: 0;
-    backdrop-filter: blur(8px);
     z-index: 999;
     pointer-events: auto;
 }
@@ -16,21 +15,42 @@
 .Album-Overlay-Content {
     background: none;
     box-shadow: black 0px 0px 20px;
-    text-align: left;
     position: fixed;
     transform: translate(-50%, -50%);
     z-index: 1001;
     animation: fadeIn 0.3s ease-in;
-    margin-left: 500px;
-    margin-top: 150px;
+    margin-left: 1100px;
+    margin-top: 350px;
+    padding-right: 400px;
 }
 
 .Album-Overlay-Content h2 {
     font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
     color: black;
 }
 
-.Album-Overlay-Content button {
+.Album-Overlay-Content h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
+    color: black;
+}
+
+.Album-Overlay-Content p {
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
+    color: black;
+}
+
+.Album-Overlay-Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 10px;
+    margin-top: 120px;
+}
+
+.Album-Overlay-Buttons button {
     background: linear-gradient(145deg, #111, #1a1a1a);
     border-radius: 20px;
     padding: 6px 12px;
@@ -42,7 +62,7 @@
     border: none;
 }
 
-.Album-Overlay-Content button:hover {
+.Album-Overlay-Buttons button:hover {
     cursor: pointer;
     background: gray;
 }
@@ -50,4 +70,9 @@
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }

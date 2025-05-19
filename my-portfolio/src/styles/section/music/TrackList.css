@@ -1,0 +1,18 @@
+﻿.TrackList {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+.TrackList Button {
+    font-family: "novecento-sans", sans-serif;
+    text-align: left;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+}

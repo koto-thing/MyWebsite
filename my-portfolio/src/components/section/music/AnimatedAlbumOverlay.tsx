@@ -7,12 +7,10 @@ export const AnimatedAlbumOverlay = ({
     album,
     originRect,
     onClose,
-    onPlay,
 }: {
     album: Album;
     originRect: DOMRect;
     onClose: () => void;
-    onPlay: () => void;
 }) => {
     const overlayRef = useRef<HTMLDivElement>(null);
     const [animating, setAnimating] = useState(true);
@@ -55,9 +53,11 @@ export const AnimatedAlbumOverlay = ({
                     <h2>{album.title}</h2>
                     <h3>{album.artist}</h3>
                     <p>{album.description}</p>
-                    <TrackList albumId={album.id} />
-                    <button onClick={onPlay}>PLAY</button>
-                    <button onClick={onClose}>CLOSE</button>
+                    <TrackList tracks={album.tracks} />
+
+                    <div className="Album-Overlay-Buttons">
+                        <button onClick={onClose}>CLOSE</button>
+                    </div>
                 </div>
             )}
         </div>

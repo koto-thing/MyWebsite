@@ -60,7 +60,6 @@ const AlbumGallery = () => {
                     album={selectedAlbum}
                     originRect={originRect}
                     onClose={() => setSelectedAlbum(null)}
-                    onPlay={() => {}}
                 />
             )}
         </div>

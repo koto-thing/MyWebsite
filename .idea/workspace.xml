@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/TrackList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/Album.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/Album.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGallery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AlbumGrid.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AnimatedAlbumOverlay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AnimatedAlbumOverlay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/TrackList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/TrackList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AnimatedAlbumOverlay.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AnimatedAlbumOverlay.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +23,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -142,6 +140,7 @@
       <workItem from="1746680135822" duration="17199000" />
       <workItem from="1746775004010" duration="7189000" />
       <workItem from="1747629140641" duration="4682000" />
+      <workItem from="1747641213585" duration="5200000" />
     </task>
     <servers />
   </component>

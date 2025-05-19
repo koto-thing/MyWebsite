@@ -9,6 +9,7 @@ type Album = {
     image: string;
     coverUrl: string;
     artist: string;
+    description: string;
     thumbnailUrl: string;
     tracks: Track[];
 };
