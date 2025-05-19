@@ -59,7 +59,7 @@ const AlbumGallery = () => {
                 <AnimatedAlbumOverlay
                     album={selectedAlbum}
                     originRect={originRect}
-                    onClose={() => setSelectedAlbum(null)}
+                    onClose={() => {setSelectedAlbum(null); }}
                 />
             )}
         </div>

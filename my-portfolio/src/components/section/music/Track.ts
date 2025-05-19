@@ -1,6 +1,6 @@
 ﻿export type Track = {
-    id: number;
+    id: string;
     title: string;
-    duration: number;
+    duration: string;
     audioUrl: string;
 };

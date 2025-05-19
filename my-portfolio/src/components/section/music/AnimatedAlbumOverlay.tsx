@@ -1,7 +1,9 @@
 ﻿import { useEffect, useRef, useState } from "react";
-import { TrackList } from "./TrackList.tsx";
+import * as Tone from "tone";
+import TrackList from "./TrackList.tsx";
 import { Album } from "./Album.ts";
 import "../../../styles/section/music/AnimatedAlbumOverlay.css";
+import {Track} from "./Track.ts";
 
 export const AnimatedAlbumOverlay = ({
     album,
@@ -13,7 +15,9 @@ export const AnimatedAlbumOverlay = ({
     onClose: () => void;
 }) => {
     const overlayRef = useRef<HTMLDivElement>(null);
+    const playerRef = useRef<Tone.Player | null>(null);
     const [animating, setAnimating] = useState(true);
+    const [closing, setClosing] = useState(false);
 
     useEffect(() => {
         const overlay = overlayRef.current;
@@ -42,21 +46,72 @@ export const AnimatedAlbumOverlay = ({
         return () => clearTimeout(timer);
     }, []);
 
+    const handleClose = () => {
+        const overlay = overlayRef.current;
+        if (!overlay) return;
+
+        setClosing(true);
+        overlay.style.transition = "all 0.5s ease";
+        overlay.style.left = `${originRect.left}px`;
+        overlay.style.top = `${originRect.top}px`;
+        overlay.style.width = `${originRect.width}px`;
+        overlay.style.height = `${originRect.height}px`;
+        overlay.style.transform = "scale(1)";
+        
+        playerRef.current?.stop();
+
+        setTimeout(() => {
+            setClosing(false);
+            onClose();
+        }, 500);
+    };
+
+    const handleTrackSelect = async (track: Track) => {
+        console.log("Starting Tone...");
+        await Tone.start();
+        console.log("Tone started. Playing", track.audioUrl);
+
+        try {
+            playerRef.current?.stop();
+            const player = new Tone.Player({
+                url: track.audioUrl,
+                loop: true,
+                autostart: true,
+                onload: () => {
+                    console.log("Audio loaded!");
+                },
+                onerror: (error) => {
+                    console.error("Error loading audio", error);
+                }
+            }).toDestination();
+
+            playerRef.current = player;
+        } catch (e) {
+            console.error("Error in Tone.Player", e);
+        }
+    };
+
     return (
         <div className="Album-Overlay">
             <div ref={overlayRef} className="Album-Overlay-Animated-Card">
                 <img src={album.coverUrl} alt={album.title} />
             </div>
 
-            {!animating && (
+            {!animating && !closing && (
                 <div className="Album-Overlay-Content">
                     <h2>{album.title}</h2>
                     <h3>{album.artist}</h3>
                     <p>{album.description}</p>
-                    <TrackList tracks={album.tracks} />
+                    <TrackList
+                        items={album.tracks}
+                        showGradients={true}
+                        enableArrowNavigation={true}
+                        onItemSelect={handleTrackSelect}
+                        maxVisibleItems={99}
+                    />
 
                     <div className="Album-Overlay-Buttons">
-                        <button onClick={onClose}>CLOSE</button>
+                        <button onClick={handleClose}>CLOSE</button>
                     </div>
                 </div>
             )}

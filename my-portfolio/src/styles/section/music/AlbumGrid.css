@@ -8,7 +8,7 @@
 
 .Album-Grid-Container.blurred {
     filter: blur(4px);
-    transition: filter 0.3s;
+    transition: filter 0.3s ease;
 }
 
 .Album-Overlay {
@@ -18,6 +18,8 @@
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: backdrop-filter 5s ease, -webkit-backdrop-filter 5s ease;
     display: flex;
     justify-content: center;
     align-items: center;

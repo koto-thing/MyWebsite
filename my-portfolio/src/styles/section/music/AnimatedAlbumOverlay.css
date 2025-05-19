@@ -19,27 +19,27 @@
     transform: translate(-50%, -50%);
     z-index: 1001;
     animation: fadeIn 0.3s ease-in;
-    margin-left: 1100px;
-    margin-top: 350px;
-    padding-right: 400px;
+    margin-left: 1400px;
+    margin-top: 800px;
+    padding-right: 600px;
 }
 
 .Album-Overlay-Content h2 {
     font-family: "Noto Sans JP", sans-serif;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 .Album-Overlay-Content h3 {
     font-family: "Noto Sans JP", sans-serif;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 .Album-Overlay-Content p {
     font-family: "Noto Sans JP", sans-serif;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 .Album-Overlay-Buttons {
