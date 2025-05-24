@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3978308-e6bd-4aba-b36c-1724840a4bd4" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/albums/PuzzleKnights.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/ArgoHazard/ACT1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/ArgoHazard/ACT2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/ArgoHazard/ACT3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/ArgoHazard/SubGameBGM.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/ArgoHazard/Title.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/DiceGame/MiniGame.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/DiceGame/Stage.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-portfolio/public/music/PuzzleKnights/Stage02.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/public/albums/Album01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AnimatedAlbumOverlay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/AnimatedAlbumOverlay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/components/section/music/albumsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AnimatedAlbumOverlay.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-portfolio/src/styles/section/music/AnimatedAlbumOverlay.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,37 +49,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/就活/MyPortofolio/my-portfolio/public/albums",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.deploy.executor": "Run",
-    "npm.dev.executor": "Run",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\就活\\MyPortofolio\\my-portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/就活/MyPortofolio/my-portfolio/public/albums&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.deploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\就活\\MyPortofolio\\my-portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\就活\MyPortofolio\my-portfolio\public\albums" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\就活\MyPortofolio\my-portfolio\public\music\PuzzleKnights" />
+      <recent name="D:\就活\MyPortofolio\my-portfolio\public\music\DiceGame" />
+      <recent name="D:\就活\MyPortofolio\my-portfolio\public\music\ArgoHazard" />
       <recent name="D:\my_website_repo\my-portfolio\public\music\PuzzleKnights" />
       <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\music" />
-      <recent name="D:\就活\MyPortofolio\my-portfolio\public\img" />
-      <recent name="D:\就活\MyPortofolio\my-portfolio\src\components\section\home" />
-      <recent name="D:\就活\MyPortofolio\my-portfolio\src\styles\section\home" />
     </key>
   </component>
   <component name="RunManager" selected="npm.deploy">
@@ -137,6 +149,7 @@
       <workItem from="1747641213585" duration="5200000" />
       <workItem from="1747670873786" duration="8541000" />
       <workItem from="1747725979883" duration="921000" />
+      <workItem from="1748064718955" duration="8597000" />
     </task>
     <servers />
   </component>

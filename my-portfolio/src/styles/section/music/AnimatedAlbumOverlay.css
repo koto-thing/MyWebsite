@@ -8,19 +8,17 @@
 .Album-Overlay-Animated-Card {
     position: absolute;
     z-index: 1000;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .Album-Overlay-Content {
     background: none;
     box-shadow: black 0px 0px 20px;
-    position: fixed;
-    transform: translate(-50%, -50%);
+    transform-origin: center center;
     z-index: 1001;
+    margin-left: 500px;
     animation: fadeIn 0.3s ease-in;
-    margin-left: 1400px;
-    margin-top: 800px;
     padding-right: 600px;
 }
 

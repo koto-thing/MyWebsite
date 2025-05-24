@@ -23,7 +23,7 @@ export const AnimatedAlbumOverlay = ({
         const overlay = overlayRef.current;
         if(!overlay) return;
 
-        const finalX = 350;
+        const finalX = 250;
         const finalY = 300;
 
         overlay.style.position = "fixed";
@@ -31,15 +31,17 @@ export const AnimatedAlbumOverlay = ({
         overlay.style.top = `${originRect.top}px`;
         overlay.style.width = `${originRect.width}px`;
         overlay.style.height = `${originRect.height}px`;
-        overlay.style.transform = "scale(1)";
+        overlay.style.transform = "scale(0.4)";
         overlay.style.transition = "all 0.5s ease";
+        overlay.style.transformOrigin = "top left";
 
         requestAnimationFrame(() => {
             overlay.style.left = `${finalX}px`;
             overlay.style.top = `${finalY}px`;
             overlay.style.width = "300px";
             overlay.style.height = "300px";
-            overlay.style.transform = "scale(1.2)";
+            overlay.style.transform = "scale(0.7)";
+            overlay.style.transformOrigin = "top left";
         });
 
         const timer = setTimeout(() => setAnimating(false), 400);
@@ -51,12 +53,13 @@ export const AnimatedAlbumOverlay = ({
         if (!overlay) return;
 
         setClosing(true);
-        overlay.style.transition = "all 0.5s ease";
         overlay.style.left = `${originRect.left}px`;
         overlay.style.top = `${originRect.top}px`;
         overlay.style.width = `${originRect.width}px`;
         overlay.style.height = `${originRect.height}px`;
-        overlay.style.transform = "scale(1)";
+        overlay.style.transform = "scale(0.4)";
+        overlay.style.transition = "all 0.5s ease";
+        overlay.style.transformOrigin = "top left";
         
         playerRef.current?.stop();
 
